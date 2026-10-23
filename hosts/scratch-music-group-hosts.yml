@@ -1,0 +1,62 @@
+generated: '2026-10-23'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 2
+  other_domain: 2
+  platform: 0
+  roles:
+  - api
+  - docs
+  - website
+hosts:
+- host: academy.scratch.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Documentation
+  - Support
+  - PrivacyPolicy
+  serves:
+  - docs
+  - hosting
+  vendor: vercel
+  registrable_domain: scratch.com
+  role: docs
+  relation: other-domain
+- host: api.scratch.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: scratch.com
+  role: api
+  relation: other-domain
+- host: api.scratchmusicgroup.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: scratchmusicgroup.com
+  role: api
+  relation: own
+- host: www.scratchmusicgroup.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  serves: []
+  registrable_domain: scratchmusicgroup.com
+  role: website
+  relation: own

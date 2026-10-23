@@ -1,0 +1,16 @@
+generated: '2026-10-23'
+method: none
+source:
+- https://zapier.com/apps/scratch-music-group/integrations
+- https://n8n.io/integrations/scratch-music-group/
+- https://composio.dev/toolkits/scratch-music-group
+- https://monid.ai/tools/scratch-music-group
+checked:
+- https://composio.dev/toolkits/scratch-music-group
+- https://monid.ai/tools/scratch-music-group
+- https://n8n.io/integrations/scratch-music-group/
+- https://zapier.com/apps/scratch-music-group/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

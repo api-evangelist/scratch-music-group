@@ -1,25 +1,85 @@
 aid: scratch-music-group
+
 name: Scratch Music Group
-description: 'Scratch Music Group is a company surfaced via the API Evangelist harvest backlog (source:
-  vc-portfolio; backed by nea) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.sanity.io/images/091xs2ok/production/139f10d1aa0141182f8290034954f74faeb1464f-7360x4912.jpg?rect=0,524,7360,3864&w=1200&h=630&fit=max&auto=format
+
+description: Scratch Music Group, founded in 2002, is a leading provider of DJ bookings, education, and event services. Co‑founded by Jam Master
+  Jay of Run DMC, the company runs the Scratch DJ Academy offering beginner to professional curricula, both online and in‑person at locations
+  in New York and Los Angeles. With over 500,000 students taught, 10,000+ DJ events annually, and a network of 7,600+ DJs, Scratch serves brand
+  clients, retailers, hospitality venues, and corporate events worldwide. Their proprietary event platform powers 100,000+ events, delivering
+  scalable solutions and guaranteed paid gigs for graduates. The company also offers equipment discounts and certification tracks, positioning
+  itself as a comprehensive ecosystem for DJ talent and event management.
+
 url: https://raw.githubusercontent.com/api-evangelist/scratch-music-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- DJ
+- Education
+- Events
+- Music
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- nea
+
 common:
+- type: LLMsTxt
+  url: llms/scratch-music-group-llms.txt
+- type: Hosts
+  url: hosts/scratch-music-group-hosts.yml
+- type: Vendors
+  url: vendors/scratch-music-group-vendors.yml
+- type: DomainSecurity
+  url: security/scratch-music-group-domain-security.yml
 - type: Website
   url: https://www.scratchmusicgroup.com
+- type: Documentation
+  url: https://academy.scratch.com
+- type: Support
+  url: https://academy.scratch.com/contact
+- type: PrivacyPolicy
+  url: https://academy.scratch.com/privacy-policy
+
+apis:
+- name: Scratch Music Group API
+  description: API for Scratch Music Group services, referenced from their documentation.
+  humanURL: https://academy.scratch.com
+  baseURL: null
+  aid: scratch-music-group:scratch-music-group-api
+
+x-backed-by:
+- nea
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://www.scratchmusicgroup.com
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

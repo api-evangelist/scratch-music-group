@@ -1,0 +1,36 @@
+generated: '2026-10-23'
+method: probed
+source: https://academy.scratch.com/privacy-policy
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://academy.scratch.com/privacy-policy
+        http_status: 200
+        fetched: "74727"
+        quote: "Your Rights Depending on your location, you may have the right to: Access the personal information we hold about you Correct inaccurate or incomplete information Delete your personal information in certain circumstances Object to or restrict certain processing Data portability — receive your data in a structured, commonly used format"
+        section: "Your Rights"
+    note: Provides data subject rights such as access, correction, deletion, and portability.
+  data_retention:
+    evidence:
+      - source: https://academy.scratch.com/privacy-policy
+        http_status: 200
+        fetched: "74727"
+        quote: "Data Retention We retain your information for as long as necessary to provide our services, comply with legal obligations, resolve disputes, and enforce our agreements. Order and payment records may be kept for tax and legal compliance. Analytics and log data may be retained for a limited period as needed for operations and security."
+        section: "Data Retention"
+    note: Describes retention periods for user data and logs.
+  subprocessors:
+    evidence:
+      - source: https://academy.scratch.com/privacy-policy
+        http_status: 200
+        fetched: "74727"
+        quote: "We may share your information with trusted third parties who help us operate our business: Payment processors (Authorize.net): To process payments securely. Hosting and infrastructure (Cloudflare): Our website and certain backend services run on Cloudflare, which may process requests and log technical data. Content management (Sanity): We use Sanity for website content management. Service providers: We may use other vendors for email, analytics, or operational support. These providers are contractually required to protect your data and use it only for the purposes we specify."
+        section: "Who We Share Your Information With"
+    note: Lists third‑party service providers acting as subprocessors.
+  age_assurance:
+    evidence:
+      - source: https://academy.scratch.com/privacy-policy
+        http_status: 200
+        fetched: "74727"
+        quote: "Children's Privacy Our services are not directed to individuals under the age of 16. We do not knowingly collect personal information from children."
+        section: "Children's Privacy"
+    note: States that services are not directed to children under 16.
